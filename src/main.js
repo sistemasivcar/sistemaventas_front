@@ -5,11 +5,11 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 import axios from "axios";
 
-// const environment = '45.90.223.88';
-// const api_port = '80';
+const environment = '45.90.223.88';
+const api_port = '80';
 
-const environment = "localhost";
-const api_port = "3000";
+// const environment = "localhost";
+// const api_port = "3000";
 
 Vue.config.productionTip = false;
 axios.defaults.baseURL = `http://${environment}:${api_port}/api/`;

@@ -323,15 +323,13 @@
                   />
                 </div>
                 <div id="">
-                  <p id="encabezado" style="max-width: 550px;">
-                    <b style="font-size: medium; letter-spacing: 1.4px;">IVCAR ALARMAS</b><br />Domicilio Fiscal: España 252 Laboulaye, Cba. -
-                    I.V.A: Resp Inscripto - 
-                    ivcaralarmas@gmail.com -
-                    Razon Social: Osvaldo Norberto Castro - 
-                    CUIT: 20-14910961-8 -
-                    www.ivcaralarmas.com
-                    3385448580
-
+                  <p id="encabezado" style="max-width: 550px">
+                    <b style="font-size: medium; letter-spacing: 1.4px"
+                      >IVCAR ALARMAS</b
+                    ><br />Domicilio Fiscal: España 252 Laboulaye, Cba. - I.V.A:
+                    Resp Inscripto - ivcaralarmas@gmail.com - Razon Social:
+                    Osvaldo Norberto Castro - CUIT: 20-14910961-8 -
+                    www.ivcaralarmas.com 3385448580
                   </p>
                 </div>
                 <!-- <div id="fact">
@@ -342,22 +340,39 @@
                     
                   </p>
                 </div> -->
-                <div style="display: flex; flex-direction: column;  align-items: center;">
-                  <p id="recibonro">{{ tipo_comprobante }} NRO {{ num_comprobante }}</p>
-                  <p style="margin:0 ; line-height:1.6; font-size: small;" ><em>No valido como factura</em></p>
-                  <p style="font-size: small;  margin: 0; line-height: 1.6;">{{ fecha.substring(0, 10) }}</p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <p id="recibonro">
+                    {{ tipo_comprobante }} NRO {{ num_comprobante }}
+                  </p>
+                  <p style="margin: 0; line-height: 1.6; font-size: small">
+                    <em>No valido como factura</em>
+                  </p>
+                  <p style="font-size: small; margin: 0; line-height: 1.6">
+                    {{ fecha.substring(0, 10) }}
+                  </p>
                 </div>
               </header>
-              
+
               <section>
                 <div>
                   <table id="facliente">
                     <tbody>
                       <tr>
                         <td id="td">
-                          <em>Cliente: <strong> {{ nombre.toUpperCase() }}</strong></em>
+                          <em
+                            >Cliente:
+                            <strong> {{ nombre.toUpperCase() }}</strong></em
+                          >
                         </td>
-                        <td id="td">Direccion: {{ calle.toUpperCase() }} {{ nro }}</td>
+                        <td id="td">
+                          Direccion: {{ calle.toUpperCase() }} {{ nro }}
+                        </td>
                         <td id="td">CUIT: {{ cuit }}</td>
                         <td id="td">Tel: {{ phone }}</td>
                       </tr>
@@ -430,7 +445,6 @@
               <footer>
                 <div id="gracias">
                   <p><b>Gracias por su compra!</b></p>
-                  
                 </div>
               </footer>
             </div>
@@ -794,7 +808,7 @@ export default {
     clientes: [],
     articulos: [],
     texto: "",
-    comprobantes: ["RECIBO", "BOLETA", "PRESUPUESTO"],
+    comprobantes: ["RECIBO", "RESUMEN CTA.", "PRESUPUESTO"],
     formasPago: ["EFECTIVO", "TRANSFERENCIA", "CHEQUE"],
     formaPago: "",
     comprobantePago: "",
@@ -1335,7 +1349,6 @@ export default {
   font-size: 16px;
 }
 
-
 #imagen {
   width: 100px;
 }
@@ -1346,21 +1359,20 @@ export default {
   display: flex;
   text-align: center;
 }
- 
-#recibonro{
+
+#recibonro {
   padding: 20px;
   background-color: #e1e1e1;
   font-weight: 900;
   margin: 0;
   text-align: center;
-} 
+}
 #header {
   /* border: solid 1px black; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
-
 }
 
 #datosivcar {
@@ -1369,7 +1381,6 @@ export default {
   text-align: center;
   line-height: 1.6;
 }
-
 
 #encabezado {
   text-align: left;
@@ -1395,7 +1406,7 @@ section {
   border: solid 1px black;
 }
 
-#td{
+#td {
   padding: 8px;
 }
 #fa {

@@ -5,8 +5,8 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 import axios from "axios";
 
-//const environment = '45.90.223.88';
-//const api_port = '80';
+// const environment = '45.90.223.88';
+// const api_port = '80';
 
 const environment = "localhost";
 const api_port = "3000";
